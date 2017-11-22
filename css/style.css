@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url("https://jaysanalysis.files.wordpress.com/2015/04/maxresdefault.jpg");
+}
+
+#ElizaTalks {
+    border: 1px solid #000;
+    text-align: center;
+    border-radius: 12px;
+    background-color: rgba(128, 128, 128, 0.562);
+    float: left;
+    width: auto;
+    padding:5px;
+}
+
+#UserTalks {
+    border: 1px solid #000;
+    text-align: center;
+    border-radius: 12px;
+    background-color: rgba(0, 128, 0, 0.849);
+    float: right;
+    width: auto;
+    margin-right:25px;
+    padding:5px;
+}
+
+h1 {
+    text-align:center;
+    color: white;
+}
+
+#Heading {
+    text-align:center;
+    color: white;
+}
+
+#inputbox {
+  position: fixed;
+  margin-bottom: 60px;
+  height: 20%;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#chatbox {
+    position : relative;
+    bottom: 0;
+    text-align:left;
+    margin:auto auto;
+    margin-bottom:25px;
+    padding:10px;
+    background:rgba(255, 248, 220, 0.6);
+    height:60%;
+    width:70%;
+    border:1px solid rgb(21, 22, 22);
+    overflow: scroll; 
+    border-radius: 25px;
+}
