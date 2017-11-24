@@ -17,6 +17,9 @@ var user string
 //with Regex changes also
 
 var responses = [][]string{
+	{`my name is ([^.?!]*)[.?!]?`,
+		"hi $1, how can i help",
+	},
 	{`I need ([^.?!]*)[.?!]?`,
 		"Why do you need $1?",
 		"Would it really help you to get $1?",
@@ -83,7 +86,7 @@ var responses = [][]string{
 	{`I think ([^.?!]*)[.?!]?`,
 		"Do you doubt $1?",
 		"Do you really think so?",
-		"But you're not sure $1?"},
+		"But you're not sure"},
 
 	{`([^.?!]*)[.?!]? friend ([^.?!]*)[.?!]?`,
 		"Tell me more about your friends.",
@@ -206,8 +209,7 @@ var responses = [][]string{
 
 	{`bye`,
 		"Thank you for talking with me.",
-		"Good-bye.",
-		"Thank you, that will be $150.  Have a good day!"},
+		"Good-bye."},
 
 	{`([^.?!]*)[.?!]?`,
 		"Please tell me more.",
