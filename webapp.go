@@ -1,7 +1,7 @@
 //G00340314 Eliza Project
 
 package main
-
+//Imports
 import (
 	"fmt"
 	"math/rand"
@@ -10,9 +10,8 @@ import (
 	"strings"
 	"text/template"
 )
-
+//Declared variables
 var user string
-
 
 var responses = [][]string{
 	{`my name is ([^.?!]*)[.?!]?`,
@@ -231,7 +230,7 @@ func main() {
 	http.HandleFunc("/chat", templateHandler)         //handle requests for templates
 	http.HandleFunc("/ajax", receiveAjax)
 	http.ListenAndServe(":8080", nil) //Listen and report from port 8080
-	//Need response handler. Which receives the message through ajax.
+	
 }
 
 func templateHandler(w http.ResponseWriter, r *http.Request) { //Handle Http requests
@@ -245,7 +244,7 @@ func responseFromEliza(usersAnswer string) string {
 
 	var counter int
 
-	for _, h := range responses {
+	for _, h := range responses {//Range of responses to be used
 
 		row := 0
 
