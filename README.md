@@ -19,5 +19,5 @@ localhost:8080 and press enter.
 8. Another page appears and the user then starts a conversation with Eliza.
 9. The user types his question in the input box and Eliza responds.
 
-##Image of Eliza 
+## Image of Eliza 
 ![alt tag](https://github.com/JohnMannion51/eliza_chatbot/blob/master/images/Eliza.jpg) 
