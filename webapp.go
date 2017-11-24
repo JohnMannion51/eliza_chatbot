@@ -13,8 +13,6 @@ import (
 
 var user string
 
-//I found the following Strings on a Python version of eliza in a different form and changed it to a 2d array.
-//with Regex changes also
 
 var responses = [][]string{
 	{`my name is ([^.?!]*)[.?!]?`,
