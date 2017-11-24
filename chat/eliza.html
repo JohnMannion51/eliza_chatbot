@@ -18,14 +18,14 @@
         <div id="chatbox">
 
           <ul id="list"></ul>
-
+          
         </div>
         
        
 <!-- INPUT BOX-->
-          <form id="inputform" action="change" method="GET" align="middle">
-            <input name="userinput" id="userinput"></input>
-          </form>
+        <form id="inputform" action="change" method="GET" align="middle">
+          <input name="userinput" id="userinput" placeholder= "Talk to Eliza"></input>
+        </form>    
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -50,7 +50,7 @@
             success: function(test){
               query = test;
 
-              $("#list").append('<div id="UserTalks"  align="right">' + $("#userinput").val() +'</div><br/><br/><div id="ElizaTalks" align="left" >'+q+'</div><br/><br/>');
+              $("#list").append('<div id="UserTalks"  align="right">' + $("#userinput").val() +'</div><br/><br/><div id="ElizaTalks" align="left" >'+query+'</div><br/><br/>');
               $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);
               $("#inputform").trigger('reset');
             }
